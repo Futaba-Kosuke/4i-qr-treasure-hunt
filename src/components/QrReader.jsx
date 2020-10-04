@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import QrReader from 'react-qr-reader'
 
-const MyQrReader = () => {
-  const [qrResult, setQrResult] = useState('No Resule')
+const MyQrReader = (props) => {
+  const qrContent = props.qrReducer.content
+  const handleSetQrContent = props.handleSetQrContent
 
   const handleScan = (data) => {
     if (data) {
-      setQrResult(data)
+      handleSetQrContent(data)
+      console.log(data)
+      console.log(qrContent)
     }
-    console.log(qrResult)
   }
   
   const handleError = (err) => {
