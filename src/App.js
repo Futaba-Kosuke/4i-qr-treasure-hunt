@@ -1,13 +1,18 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
-import QrReader from './components/QrReader.jsx'
+
+import { Provider } from 'react-redux'
+import store from './redux/store.js'
+
+import QrReader from './containers/QrReader.js'
 
 const App = () => {
   return (
-    <div className="App">
-      <QrReader/>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <QrReader/>
+      </div>
+    </Provider>
   );
 }
 
