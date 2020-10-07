@@ -1,13 +1,15 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { setQrContent, resetQrContent} from '../redux/actions.js'
-import QrReader from '../components/QrReader.jsx'
+import { setQrContent } from '../redux/actions.js'
+import QrReader from '../components/QrReader'
 
 // Stateを整形してPropsに挿入
 const useStateProps = () => {
   const qrReducer= useSelector((state) => state.qrReducer)
 
-  return { qrReducer }
+  return {
+    qrContent: qrReducer.content
+  }
 }
 
 // Actionを整形してPropsに挿入
@@ -21,20 +23,10 @@ const useDispatchProps = () => {
     [dispatch]
   )
 
-  const handleResetQrContent = React.useCallback(() =>
-    {
-      dispatch(resetQrContent)
-    },
-    [dispatch]
-  )
-
   return {
-    handleSetQrContent,
-    handleResetQrContent
+    handleSetQrContent
   }
 }
-
-// export default connect(useStateProps, useDispatchProps)(QrReader)
 
 const QrReaderContainer = (props) => {
   const _props = { ...useStateProps(), ...useDispatchProps(), ...props }
