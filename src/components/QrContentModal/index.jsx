@@ -15,6 +15,7 @@ const QrContentModal = (props) => {
   
   const isOpen = props.isOpen
   const contentTitle = props.contentTitle
+  const contentPath = props.contentPath
 
   const handleResetQrContent = props.handleResetQrContent
 
@@ -38,7 +39,7 @@ const QrContentModal = (props) => {
               <Typography variant="h5" component="h2">
                 { contentTitle }
               </Typography>
-              <CardMedia style={{ height: "80vw", width: "80vw" }} image="/assets/temp.png"/>
+              <CardMedia style={{ height: "80vw", width: "80vw" }} image={contentPath}/>
             </CardContent>
           </Card>
         </Fade>

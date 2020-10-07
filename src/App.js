@@ -14,7 +14,7 @@ const App = () => {
       <div className="App">
         <HeaderBar/>
         <QrReader/>
-        <QrContentModal contentTitle='title'/>
+        <QrContentModal/>
       </div>
     </Provider>
   );
