@@ -7,12 +7,15 @@ import Backdrop from '@material-ui/core/Backdrop'
 import Fade from '@material-ui/core/Fade'
 import Card from '@material-ui/core/Card'
 import CardMedia from '@material-ui/core/CardMedia'
+import CardContent from '@material-ui/core/CardContent'
+import Typography from '@material-ui/core/Typography'
 
 const QrContentModal = (props) => {
   const classes = useStyles()
   
   const isOpen = props.isOpen
   const contentTitle = props.contentTitle
+  const contentPath = props.contentPath
 
   const handleResetQrContent = props.handleResetQrContent
 
@@ -32,8 +35,12 @@ const QrContentModal = (props) => {
       >
         <Fade in={isOpen}>
           <Card>
-            <h2 id="transition-modal-title">{ contentTitle }</h2>
-            <CardMedia style={{ height: "80vw", width: "80vw" }} image="/assets/temp.png"/>
+            <CardContent>
+              <Typography variant="h5" component="h2">
+                { contentTitle }
+              </Typography>
+              <CardMedia style={{ height: "80vw", width: "80vw" }} image={contentPath}/>
+            </CardContent>
           </Card>
         </Fade>
       </Modal>
