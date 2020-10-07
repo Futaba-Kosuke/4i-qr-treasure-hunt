@@ -39,7 +39,7 @@ const QrContentModal = (props) => {
               <Typography variant="h5" component="h2">
                 { contentTitle }
               </Typography>
-              <CardMedia style={{ height: "80vw", width: "80vw" }} image={contentPath}/>
+              <CardMedia style={{ height: "80vw", width: "80vw" }} image={process.env.PUBLIC_URL + contentPath}/>
             </CardContent>
           </Card>
         </Fade>
