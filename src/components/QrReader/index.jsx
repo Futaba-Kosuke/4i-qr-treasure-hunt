@@ -2,14 +2,11 @@ import React from 'react'
 import QrReader from 'react-qr-reader'
 
 const MyQrReader = (props) => {
-  const qrContent = props.qrContent
   const handleSetQrContent = props.handleSetQrContent
 
   const handleScan = (data) => {
     if (data) {
       handleSetQrContent(data)
-      console.log(data)
-      console.log(qrContent)
     }
   }
   
