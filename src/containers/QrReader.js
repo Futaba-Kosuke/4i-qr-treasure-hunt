@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setQrContent } from '../redux/actions.js'
-import QrReader from '../components/QrReader.jsx'
+import QrReader from '../components/QrReader'
 
 // Stateを整形してPropsに挿入
 const useStateProps = () => {
