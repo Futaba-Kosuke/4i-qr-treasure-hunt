@@ -6,6 +6,7 @@ import store from './redux/store.js'
 
 import HeaderBar from './components/HeaderBar.jsx'
 import QrReader from './containers/QrReader.js'
+import QrContentModal from './containers/QrContentModal.js'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <div className="App">
         <HeaderBar/>
         <QrReader/>
+        <QrContentModal contentTitle='title'/>
       </div>
     </Provider>
   );
