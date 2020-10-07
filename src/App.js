@@ -4,7 +4,7 @@ import './App.css';
 import { Provider } from 'react-redux'
 import store from './redux/store.js'
 
-import HeaderBar from './components/HeaderBar.jsx'
+import HeaderBar from './components/HeaderBar'
 import QrReader from './containers/QrReader.js'
 import QrContentModal from './containers/QrContentModal.js'
 
