@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/4i-qr-treasure-hunt/static/css/main.e1a0d0c5.chunk.css",
+    "main.js": "/4i-qr-treasure-hunt/static/js/main.c43c3a04.chunk.js",
+    "main.js.map": "/4i-qr-treasure-hunt/static/js/main.c43c3a04.chunk.js.map",
+    "runtime-main.js": "/4i-qr-treasure-hunt/static/js/runtime-main.2e7a0dc7.js",
+    "runtime-main.js.map": "/4i-qr-treasure-hunt/static/js/runtime-main.2e7a0dc7.js.map",
+    "static/js/2.411ab6d0.chunk.js": "/4i-qr-treasure-hunt/static/js/2.411ab6d0.chunk.js",
+    "static/js/2.411ab6d0.chunk.js.map": "/4i-qr-treasure-hunt/static/js/2.411ab6d0.chunk.js.map",
+    "index.html": "/4i-qr-treasure-hunt/index.html",
+    "precache-manifest.9096e2dbbc01674044aa2d11ac96cf07.js": "/4i-qr-treasure-hunt/precache-manifest.9096e2dbbc01674044aa2d11ac96cf07.js",
+    "service-worker.js": "/4i-qr-treasure-hunt/service-worker.js",
+    "static/css/main.e1a0d0c5.chunk.css.map": "/4i-qr-treasure-hunt/static/css/main.e1a0d0c5.chunk.css.map",
+    "static/js/2.411ab6d0.chunk.js.LICENSE.txt": "/4i-qr-treasure-hunt/static/js/2.411ab6d0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e7a0dc7.js",
+    "static/js/2.411ab6d0.chunk.js",
+    "static/css/main.e1a0d0c5.chunk.css",
+    "static/js/main.c43c3a04.chunk.js"
+  ]
+}
