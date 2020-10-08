@@ -16,8 +16,50 @@ const QrContentModal = (props) => {
   const isOpen = props.isOpen
   const contentTitle = props.contentTitle
   const contentPath = props.contentPath
+  const isWin = props.isWin
 
   const handleResetQrContent = props.handleResetQrContent
+
+  const hintContent = (contentTitle, contentPath) => {
+    return (
+      <>
+        <CardContent>
+          <Typography variant="h5" component="h2">
+            { contentTitle }
+          </Typography>
+          <CardMedia style={{ height: "80vw", width: "80vw" }} image={process.env.PUBLIC_URL + contentPath}/>
+        </CardContent>
+      </>
+    )
+  }
+
+  const winContent = () => {
+
+    const now = new Date()
+
+    const hour = now.getHours()
+    const minutes = now.getMinutes()
+    const seconds = now.getSeconds()
+
+    const contentPath = '/assets/win.png'
+
+    return (
+      <>
+        <CardContent>
+          <Typography variant="h5" component="h2">
+            YOU WIN!!
+          </Typography>
+          <Typography>
+            スクリーンショットで保存して4Iの教室に戻りましょう！
+          </Typography>
+          <CardMedia style={{ height: "80vw", width: "80vw" }} image={process.env.PUBLIC_URL + contentPath}/>
+        </CardContent>
+        <Typography variant="h5" style={{ backgroundColor: '#f0f0f0', padding: '16px' }}>
+          現在の時刻: {hour}:{minutes}:{seconds}
+        </Typography>
+      </>
+    )
+  }
 
   return (
     <div>
@@ -35,12 +77,7 @@ const QrContentModal = (props) => {
       >
         <Fade in={isOpen}>
           <Card>
-            <CardContent>
-              <Typography variant="h5" component="h2">
-                { contentTitle }
-              </Typography>
-              <CardMedia style={{ height: "80vw", width: "80vw" }} image={process.env.PUBLIC_URL + contentPath}/>
-            </CardContent>
+            { isWin ? winContent() : hintContent(contentTitle, contentPath) }
           </Card>
         </Fade>
       </Modal>
