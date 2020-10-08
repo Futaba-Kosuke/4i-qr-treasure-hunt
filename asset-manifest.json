@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/4i-qr-treasure-hunt/static/css/main.e1a0d0c5.chunk.css",
-    "main.js": "/4i-qr-treasure-hunt/static/js/main.531d3def.chunk.js",
-    "main.js.map": "/4i-qr-treasure-hunt/static/js/main.531d3def.chunk.js.map",
+    "main.js": "/4i-qr-treasure-hunt/static/js/main.701d94f8.chunk.js",
+    "main.js.map": "/4i-qr-treasure-hunt/static/js/main.701d94f8.chunk.js.map",
     "runtime-main.js": "/4i-qr-treasure-hunt/static/js/runtime-main.2e7a0dc7.js",
     "runtime-main.js.map": "/4i-qr-treasure-hunt/static/js/runtime-main.2e7a0dc7.js.map",
     "static/js/2.411ab6d0.chunk.js": "/4i-qr-treasure-hunt/static/js/2.411ab6d0.chunk.js",
     "static/js/2.411ab6d0.chunk.js.map": "/4i-qr-treasure-hunt/static/js/2.411ab6d0.chunk.js.map",
     "index.html": "/4i-qr-treasure-hunt/index.html",
-    "precache-manifest.c955a448b83c880d3af11779a875d403.js": "/4i-qr-treasure-hunt/precache-manifest.c955a448b83c880d3af11779a875d403.js",
+    "precache-manifest.1a702bbfc61c010d5154764f8602cbe4.js": "/4i-qr-treasure-hunt/precache-manifest.1a702bbfc61c010d5154764f8602cbe4.js",
     "service-worker.js": "/4i-qr-treasure-hunt/service-worker.js",
     "static/css/main.e1a0d0c5.chunk.css.map": "/4i-qr-treasure-hunt/static/css/main.e1a0d0c5.chunk.css.map",
     "static/js/2.411ab6d0.chunk.js.LICENSE.txt": "/4i-qr-treasure-hunt/static/js/2.411ab6d0.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2e7a0dc7.js",
     "static/js/2.411ab6d0.chunk.js",
     "static/css/main.e1a0d0c5.chunk.css",
-    "static/js/main.531d3def.chunk.js"
+    "static/js/main.701d94f8.chunk.js"
   ]
 }
