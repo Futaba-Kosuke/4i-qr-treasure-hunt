@@ -9,9 +9,9 @@ const HeaderBar = (props) => {
     <>
       <CssBaseLine/>
       <AppBar position="static">
-        <Toolbar>
-          <Typography>
-            高専祭2020 4I / QRを探せ!
+        <Toolbar style={{ display: 'felx', alignItems: 'center', justifyContent: 'center' }} >
+          <Typography variant="h6">
+            QRコード宝探し / NitKit Fes 4I
           </Typography>
         </Toolbar>
       </AppBar>
