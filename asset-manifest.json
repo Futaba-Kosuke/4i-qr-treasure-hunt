@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/4i-qr-treasure-hunt/static/css/main.e1a0d0c5.chunk.css",
-    "main.js": "/4i-qr-treasure-hunt/static/js/main.701d94f8.chunk.js",
-    "main.js.map": "/4i-qr-treasure-hunt/static/js/main.701d94f8.chunk.js.map",
+    "main.js": "/4i-qr-treasure-hunt/static/js/main.d71dee2b.chunk.js",
+    "main.js.map": "/4i-qr-treasure-hunt/static/js/main.d71dee2b.chunk.js.map",
     "runtime-main.js": "/4i-qr-treasure-hunt/static/js/runtime-main.2e7a0dc7.js",
     "runtime-main.js.map": "/4i-qr-treasure-hunt/static/js/runtime-main.2e7a0dc7.js.map",
-    "static/js/2.411ab6d0.chunk.js": "/4i-qr-treasure-hunt/static/js/2.411ab6d0.chunk.js",
-    "static/js/2.411ab6d0.chunk.js.map": "/4i-qr-treasure-hunt/static/js/2.411ab6d0.chunk.js.map",
+    "static/js/2.4ef54141.chunk.js": "/4i-qr-treasure-hunt/static/js/2.4ef54141.chunk.js",
+    "static/js/2.4ef54141.chunk.js.map": "/4i-qr-treasure-hunt/static/js/2.4ef54141.chunk.js.map",
     "index.html": "/4i-qr-treasure-hunt/index.html",
-    "precache-manifest.1a702bbfc61c010d5154764f8602cbe4.js": "/4i-qr-treasure-hunt/precache-manifest.1a702bbfc61c010d5154764f8602cbe4.js",
+    "precache-manifest.92de90a803933236999edd5c823b29a3.js": "/4i-qr-treasure-hunt/precache-manifest.92de90a803933236999edd5c823b29a3.js",
     "service-worker.js": "/4i-qr-treasure-hunt/service-worker.js",
     "static/css/main.e1a0d0c5.chunk.css.map": "/4i-qr-treasure-hunt/static/css/main.e1a0d0c5.chunk.css.map",
-    "static/js/2.411ab6d0.chunk.js.LICENSE.txt": "/4i-qr-treasure-hunt/static/js/2.411ab6d0.chunk.js.LICENSE.txt"
+    "static/js/2.4ef54141.chunk.js.LICENSE.txt": "/4i-qr-treasure-hunt/static/js/2.4ef54141.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2e7a0dc7.js",
-    "static/js/2.411ab6d0.chunk.js",
+    "static/js/2.4ef54141.chunk.js",
     "static/css/main.e1a0d0c5.chunk.css",
-    "static/js/main.701d94f8.chunk.js"
+    "static/js/main.d71dee2b.chunk.js"
   ]
 }
