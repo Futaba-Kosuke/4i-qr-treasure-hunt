@@ -11,26 +11,33 @@ const qrImageMapCreater = (num) => {
       'path': '/assets/' + String(i) + '.png'
     }
   }
-  qrImageMap['https://win.com'] = {
+  qrImageMap['https://ac.com'] = {
     'title': '',
-    'path': '/assets/win.png'
+    'path': '/assets/ac.jpg'
   }
+  qrImageMap['https://wa.com'] = {
+    'title': '',
+    'path': '/assets/wa.jpg'
+  }
+  
   return qrImageMap
 }
 
 const useStateProps = () => {
   const qrReducer = useSelector((state) => state.qrReducer)
   
-  const qrImageMap = qrImageMapCreater(4)
+  const qrImageMap = qrImageMapCreater(5)
   const content = qrImageMap[qrReducer.content]
 
-  const winContentPath = '/assets/win.png'
+  const acContentPath = '/assets/ac.jpg'
+  const waContentPath = '/assets/wa.jpg'
 
   return {
-    isOpen: content !== undefined || content?.path === winContentPath,
+    isOpen: content !== undefined,
     contentTitle: content?.title,
     contentPath: content?.path,
-    isWin: content?.path === winContentPath
+    isAC: content?.path === acContentPath,
+    isWA: content?.path === waContentPath
   }
 }
 
