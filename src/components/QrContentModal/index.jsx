@@ -38,9 +38,9 @@ const QrContentModal = (props) => {
 
     const now = new Date()
 
-    const hour = now.getHours()
-    const minutes = now.getMinutes()
-    const seconds = now.getSeconds()
+    const hour = ('00' + now.getHours()).slice(-2)
+    const minutes = ('00' + now.getMinutes()).slice(-2)
+    const seconds = ('00' + now.getSeconds()).slice(-2)
 
     return (
       <>
