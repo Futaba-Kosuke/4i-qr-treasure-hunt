@@ -16,7 +16,8 @@ const QrContentModal = (props) => {
   const isOpen = props.isOpen
   const contentTitle = props.contentTitle
   const contentPath = props.contentPath
-  const isWin = props.isWin
+  const isAC = props.isAC
+  const isWA = props.isWA
 
   const handleResetQrContent = props.handleResetQrContent
 
@@ -33,15 +34,13 @@ const QrContentModal = (props) => {
     )
   }
 
-  const winContent = () => {
+  const acContent = () => {
 
     const now = new Date()
 
-    const hour = now.getHours()
-    const minutes = now.getMinutes()
-    const seconds = now.getSeconds()
-
-    const contentPath = '/assets/win.png'
+    const hour = ('00' + now.getHours()).slice(-2)
+    const minutes = ('00' + now.getMinutes()).slice(-2)
+    const seconds = ('00' + now.getSeconds()).slice(-2)
 
     return (
       <>
@@ -57,6 +56,23 @@ const QrContentModal = (props) => {
         <Typography variant="h5" style={{ backgroundColor: '#f0f0f0', padding: '16px' }}>
           現在の時刻: {hour}:{minutes}:{seconds}
         </Typography>
+      </>
+    )
+  }
+
+  const waContent = () => {
+
+    return (
+      <>
+        <CardContent>
+          <Typography variant="h5" component="h2">
+            YOU LOSE...
+          </Typography>
+          <Typography>
+            不正解です。正解のQRコードを探しましょう！
+          </Typography>
+          <CardMedia style={{ height: "80vw", width: "80vw" }} image={process.env.PUBLIC_URL + contentPath}/>
+        </CardContent>
       </>
     )
   }
@@ -77,7 +93,12 @@ const QrContentModal = (props) => {
       >
         <Fade in={isOpen}>
           <Card>
-            { isWin ? winContent() : hintContent(contentTitle, contentPath) }
+            { isAC ? 
+                acContent() :
+              isWA ?
+                waContent() :
+                hintContent(contentTitle, contentPath)
+            }
           </Card>
         </Fade>
       </Modal>
